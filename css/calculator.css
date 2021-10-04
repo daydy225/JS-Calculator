@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fafafa;
+  background-color: #ebebeb;
 }
 
 .js_calculator {
@@ -52,14 +52,14 @@ body {
   height: 35px;
   color: #000303;
   font-weight: 400;
-  background-color: #f2f2f2;
+  background-color: hsl(0, 0%, 86%);
   place-items: center;
   border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
 }
 .calculator span:active {
-  background-color: hsl(246, 87%, 54%);
+  background-color: hsl(244, 87%, 54%);
   color: #fff;
 }
 @media (min-width: 600px) {
@@ -78,5 +78,5 @@ body {
 .calculator .multi,
 .calculator .moins,
 .calculator .plus {
-  background-color: #e7e7e7;
+  background-color: hsl(52, 98%, 48%);
 }
