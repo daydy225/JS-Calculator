@@ -60,6 +60,7 @@ body {
 }
 .calculator span:active {
   background-color: hsl(244, 87%, 54%);
+  border-radius: 10px;
   color: #fff;
 }
 @media (min-width: 600px) {
