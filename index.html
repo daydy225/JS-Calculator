@@ -4,53 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="css/normalize/normalize.css" />
+    <link rel="stylesheet" href="css/reset/reset200802.css" />
 
     <link rel="stylesheet" href="css/calculator.css" />
     <title>Calculator with Javascript</title>
   </head>
   <body>
     <!-- Challenge du Weekend calculatrice -->
+
     <div class="js_calculator">
-      <form name="calc" class="calculator">
-        <input type="text" class="value" name="txt" readonly="" />
-        <span class="num o-para" onclick="document.calc.txt.value +='('"
-          >(</span
-        >
-        <span class="num c-para" onclick="document.calc.txt.value +=')'"
-          >)</span
-        >
-        <span class="num percent" onclick="document.calc.txt.value +='1/100'"
-          >%</span
-        >
-        <span class="num ac" onclick="document.calc.txt.value +=''">AC</span>
-        <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-        <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-        <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-        <span class="num div" onclick="document.calc.txt.value +='/'">÷</span>
-        <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-        <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-        <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-        <span class="num multi" onclick="document.calc.txt.value +='*'">×</span>
-        <span class="num" onclick="document.calc.txt.value +='1'">1</span>
-        <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-        <span class="num" onclick="document.calc.txt.value +='3'">3</span>
-        <span class="num moins" onclick="document.calc.txt.value +='-'">-</span>
-        <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-        <span class="num" onclick="document.calc.txt.value +='.'">.</span>
-        <span
-          class="num"
-          onclick="document.calc.txt.value +=eval(calc.txt.value)"
-          >=</span
-        >
-        <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
-      </form>
+      <div class="calculator_keys">
+        <div class="display">0</div>
+        <span data-type="operator" data-key="multi">× </span>
+        <span data-type="operator" data-key="moins">-</span>
+        <span data-type="operator" data-key="div">÷</span>
+        <span data-type="clear" class="clear">C</span>
+        <span data-type="number" class="seven">7</span>
+        <span data-type="number" class="eight">8</span>
+        <span data-type="number" class="nine">9</span>
+        <span data-type="operator" data-key="plus">+</span>
+        <span data-type="number" class="four">4</span>
+        <span data-type="number" class="five">5</span>
+        <span data-type="number" class="six">6</span>
+        <span data-type="number" class="one">1</span>
+        <span data-type="number" class="two">2</span>
+        <span data-type="number" class="three">3</span>
+        <span data-type="number" class="zero">0</span>
+        <span data-type="number" class="dot">.</span>
+        <span data-type="equal" class="egal-sign">=</span>
+      </div>
     </div>
     <script src="JS/calculator.js"></script>
   </body>
